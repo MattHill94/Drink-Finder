@@ -64,7 +64,7 @@ function randomDrink() {
 
 // when clikcing on a drinks thumbnail returns drink-info 
 drinksEl.addEventListener("click", (e) => {
-    const drinkInfo = e.path.find((item) => {
+    const drinkInfo = e.composedPath().find((item) => {
         if (item.classList) {
             return item.classList.contains('drink-info');
         } else {
