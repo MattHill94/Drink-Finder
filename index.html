@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drink Finder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css style sheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+        <!-- added font awesome for search and random icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Container holding title for page search bar and buttons -->
+    <div class="container">
+        <h1>Drink Finder</h1>
+        <div class="flex">
+            <form action="" class="flex" id="submit">
+                <input type="text" id="search" placeholder="Search for a cocktail or spirit ">
+                <button class="search-btn" type="submit">
+                        <i class="fas fa-search"></i>
+                </button>
+                <button class="random-btn" id="random">
+                    <i class="fas fa-random"></i>
+                </button>
+            </form>
+        </div>
+            <!-- divs holding id's for dom content written in index.js -->
+
+        <div id="result-heading"></div>
+        <div id="drinks" class="drinks"></div>
+        <div id="single-drink"></div>
+
+    </div>
+    <!-- index.js fild -->
+
+    <script src="index.js" async defer></script>
+
+</body>
+
+</html>
